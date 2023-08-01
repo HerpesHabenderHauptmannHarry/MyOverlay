@@ -1,14 +1,14 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='MyOverlay',
     version='0.1.0',    
     description='Customized Only Text Screen Overlay',
     url= 'https://github.com/HerpesHabenderHauptmannHarry/MyOverlay',
-    autho r='Erik Reimann',
+    author='Erik Reimann',
     author_email='erikreimann28@gmail.com',
     license='General Public 3.0',
-    packages=['Overlay'],
+    packages=setuptools.find_packages(where="MyOverlay"),
     install_requires=['mpi4py>=2.0',
                       'numpy',                     
                       ],
